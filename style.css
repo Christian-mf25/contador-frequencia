@@ -1,0 +1,81 @@
+:root{
+	--fonte-titulo: 'Patrick Hand', cursive;
+	--fonte-palavras: 'Coming Soon', cursive;
+	--cor-letras: #fff;
+}
+
+body, h1, main, span, h3, div, button, textarea{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: #3b6179;
+}
+
+h1{
+	font-family: var(--fonte-titulo);
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 10px;
+	color: var(--cor-letras);
+}
+
+main{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+textarea{
+	margin: 15px 0;
+    background-color: #8ecae6;
+    width: 90%;
+    height: 240px;
+    border-radius: 10px;
+    border: solid;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-palavras);
+}
+
+button{
+	font-size: 2rem;
+    font-family: var(--fonte-titulo);
+    background-color: #8ecae6;
+	box-shadow: 0px 0px 50px -5px rgb(0 252 255 / 63%);
+	color: #2d3b3f;
+    width: 70%;
+    padding: 3px;
+    border-radius: 40px;
+}
+
+h3{
+    margin-top: 20px;
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+	color: var(--cor-letras);
+}
+
+div{
+    font-family: var(--fonte-palavras);
+    font-size: 1.2rem;
+    width: 90%;
+	color: var(--cor-letras);
+	text-align: center;
+}
+
+@media (min-width: 500px){
+	textarea{
+		max-width: 1100px;
+	}
+	button{
+		width: 344px;
+	}
+	div{
+		max-width: 1100px;
+	}
+}
